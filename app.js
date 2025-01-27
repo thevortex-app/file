@@ -5,7 +5,7 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
         document.getElementById('fileSize').textContent = `File size: ${fileSizeMB} MB`;
 
         // Připojení k websocket serveru
-        const ws = new WebSocket('wss://your-websocket-server-url');
+        const ws = new WebSocket('wss://localhost');
         ws.onopen = function() {
             console.log('WebSocket is connected');
             // Posílání dat na server
