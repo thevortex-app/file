@@ -12,7 +12,7 @@ document.getElementById('uploadForm').addEventListener('submit', function(event)
         formData.append('fileSize', fileSizeMB);
 
         // Send data using fetch API
-        fetch('https://example.com/api/upload', { // Replace with your actual API endpoint
+        fetch('https://thevortex-app.github.io/file/api/upload', { // Replace with your actual API endpoint
             method: 'POST',
             body: formData
         })
